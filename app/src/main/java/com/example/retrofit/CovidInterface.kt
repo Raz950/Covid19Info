@@ -1,5 +1,6 @@
 package com.example.retrofit
 
+import com.example.pojo.ResponseCountry
 import com.example.pojo.ResponseSummary
 import retrofit2.Response
 import retrofit2.http.GET
@@ -14,8 +15,8 @@ interface CovidInterface {
     // response berupa data class dari pojo ResponseSummary
     suspend fun getSummary(): Response<ResponseSummary>
 
-    @GET("dayone/country/(country_name)")
+    @GET("dayone/country/{country_name}")
 
 
-    suspend fun getCountryData(@Path("country_name") country_name: String) : Response<List<ResponseSummary>>
+    suspend fun getCountryData(@Path("country_name") country_name: String): Response<List<ResponseCountry>>
 }

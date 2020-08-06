@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ChartCountryActivity">
+    tools:context="com.example.covid19info.ChartCountryActivity">
     <!--    region collection card-->
     <LinearLayout
         android:layout_width="match_parent"
@@ -100,7 +100,7 @@
                         android:layout_height="wrap_content"
                         android:text="Total Confirmed"
                         android:textAlignment="center"
-                        android:textColor="@android:color/white"
+                        android:textColor="@android:color/darker_gray"
                         android:textSize="@dimen/sp12"
                         android:textStyle="bold" />
 
@@ -110,7 +110,7 @@
                         android:layout_height="wrap_content"
                         android:text="CURRENTLY"
                         android:textAlignment="center"
-                        android:textColor="@android:color/white"
+                        android:textColor="@android:color/darker_gray"
                         android:textSize="@dimen/sp20"
                         android:textStyle="bold" />
 
@@ -139,7 +139,7 @@
                         android:layout_height="wrap_content"
                         android:text="New Confirmed"
                         android:textAlignment="center"
-                        android:textColor="@android:color/white"
+                        android:textColor="@android:color/darker_gray"
                         android:textSize="@dimen/sp12"
                         android:textStyle="bold" />
 
@@ -149,7 +149,7 @@
                         android:layout_height="wrap_content"
                         android:text="CURRENTLY"
                         android:textAlignment="center"
-                        android:textColor="@android:color/white"
+                        android:textColor="@android:color/darker_gray"
                         android:textSize="@dimen/sp20"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -281,7 +281,7 @@
                         android:layout_height="wrap_content"
                         android:text="CURRENTLY"
                         android:textAlignment="center"
-                        android:textColor="@android:color/white"
+                        android:textColor="@android:color/darker_gray"
                         android:textSize="@dimen/sp20"
                         android:textStyle="bold" />
 
@@ -318,7 +318,7 @@
                         android:layout_height="wrap_content"
                         android:text="CURRENTLY"
                         android:textAlignment="center"
-                        android:textColor="@android:color/white"
+                        android:textColor="@android:color/darker_gray"
                         android:textSize="@dimen/sp20"
                         android:textStyle="bold" />
 

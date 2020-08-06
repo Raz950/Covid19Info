@@ -1,10 +1,10 @@
 package com.example.covid19info
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.SearchView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.adapter.ListCountryAdapter
@@ -42,7 +42,13 @@ class MainActivity : AppCompatActivity() {
             adapter = rvAdapter
         }
 
+        binding.swipeRefresh.setOnRefreshListener {
+            // jalankan kembali fungsi getCovidData untuk merefresh data sebelumnya.
+            getCovidData(binding)
+        }
+
         // atur swiperefresh
+        getCovidData(binding)
         binding.swipeRefresh.setOnRefreshListener {
             // jalankan kembali fungsi getCovidData untuk merefresh data sebelumnya.
             getCovidData(binding)

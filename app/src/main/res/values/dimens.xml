@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="dp8" />
-    <dimen name="sp20" />
-    <dimen name="dp2" />
-    <dimen name="sp16" />
-    <dimen name="sp18" />
-    <dimen name="dp16" />
-    <dimen name="sp12" />
-    <dimen name="dp4" />
-    <dimen name="dp20" />
+    <dimen name="dp8">8dp</dimen>
+    <dimen name="sp20">20dp</dimen>
+    <dimen name="dp2">2dp</dimen>
+    <dimen name="sp16">16dp</dimen>
+    <dimen name="sp18">18dp</dimen>
+    <dimen name="dp16">16dp</dimen>
+    <dimen name="sp12">12dp</dimen>
+    <dimen name="dp4">4dp</dimen>
+    <dimen name="dp20">20dp</dimen>
 </resources>
