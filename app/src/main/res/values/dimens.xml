@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp8" />
+    <dimen name="sp20" />
+    <dimen name="dp2" />
+    <dimen name="sp16" />
+    <dimen name="sp18" />
+    <dimen name="dp16" />
+    <dimen name="sp12" />
+    <dimen name="dp4" />
+    <dimen name="dp20" />
+</resources>
