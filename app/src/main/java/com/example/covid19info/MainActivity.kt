@@ -15,9 +15,11 @@ import com.example.retrofit.RetrofitService
 import id.idn.fahru.covid19info.databinding.ActivityMainBinding
 import kotlinx.coroutines.launch
 
+@Suppress("UNCHECKED_CAST")
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
     // rvAdapter dibuat variabel Global
     private lateinit var rvAdapter : ListCountryAdapter
 
@@ -84,7 +86,7 @@ class MainActivity : AppCompatActivity() {
             val summary = retrofit.getSummary()
             if (summary.isSuccessful) { // jika berhasil
                 // buat variabel dataCountry yang berisi list countries dari API
-                val dataCountry = summary.body()?.countries as List<CountriesItem>
+                val dataCountry = summary.body()?.countries as List<*>
 
                 // buat variabel yang memuat nilai global dari API
                 val dataGlobal = summary.body()?.global as Global
@@ -102,7 +104,7 @@ class MainActivity : AppCompatActivity() {
                 binding.swipeRefresh.isRefreshing = false
 
                 // tambahkan ke dalam rvAdapter
-                rvAdapter.addData(dataCountry)
+                rvAdapter.addData(dataCountry as List<CountriesItem>)
             } else {
                 Log.e("RetrofitFailed", summary.errorBody().toString())
             }
